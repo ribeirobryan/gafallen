@@ -1,0 +1,129 @@
+@charset "utf-8";
+ *{
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ /*font-family: 'Bebas Neue', sans-serif;*/
+
+ @font-face {
+     font-family:"Counter Strike";
+     src: url(cs_regular.ttf);
+ }
+header{
+    display: flex;
+    align-items:center;
+    gap: 25px;
+    background:linear-gradient(27deg, rgba(0,0,0,1) 0%, rgba(89,89,89,1) 70%);
+    height: 70px;
+    border-bottom: 1px solid black;
+}
+.header-img{
+    width: 50px;
+    margin-left: 0.5vw;
+}
+.header-img-2{
+    width: 100px;
+}
+
+.header-nav{
+    display: flex;
+    gap: 25px;    
+}
+.header-nav-item{
+    color: #ffdd00;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 4px 4px black;
+}
+.header-nav-item:hover{
+    background-color: rgb(255, 221, 0, 0.1);
+    border-color: #ffdd00;
+    box-shadow: 4px 8px 10px #ffdd00;
+    transition-duration: 0.4s;
+}
+main{
+    display: flex;
+    height: 598px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+.main-main{
+    display: flex;
+    align-items: center;
+    width: 997px;
+    background-image: url('BG-PIC-SITE.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: -10px 0 20px -5px rgba(115,115,115,0.9),
+                10px 0 20px -5px rgba(115,115,115,0.9);
+}
+.main-image{
+    width: 400px;
+    height: 417px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+}
+
+@media (max-width:1100px){
+    .main-main{
+    width: 90vw;
+    min-width: none;
+    }
+    .main-image{
+        width: 300px;
+        height: 312px;
+        margin-bottom: 140px;
+        margin-left: -20px;
+    }
+}
+@media (max-width:600px){
+    .main-image{
+        width: 200px;
+        height: 208px;
+        margin-bottom: 240px;
+        margin-left: -30px;
+    }
+}
+
+.parte-ext-direita{
+    width: 25vw;
+    background-image: url('wallpaper-awp-direita.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.parte-ext-esquerda{
+    width: 25vw;
+    background-image: url('wallpaper-awp-esquerda.png') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.descricao{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color:white;
+    gap: 20px;
+}
+h1.descricao{
+    color: #ffdd00;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Counter Strike", cursive;
+    text-shadow:2px 2.5px 0px rgb(0, 0, 0);
+    -webkit-text-stroke: 0.1px black;
+}
+p.descricao{
+    font-size: 1.3rem;
+    font-family: "Counter Strike", cursive;
+    color: #ffdd00;
+    text-shadow:1px 1px 0px rgb(0, 0, 0);
+}
